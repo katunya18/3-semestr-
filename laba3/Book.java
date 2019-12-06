@@ -25,13 +25,16 @@ public abstract class Book {
         return name;
     }
 
-    public int getyear() {
-        return year;
-    }
+    public int getyear() {return year;}
+
     public String getizdatelstvo() {
         return izdatelstvo;
     }
+
+    public void Show() {
+        System.out.println("Энциклопедия " +name+ " автора "  + autor+year+" года "+"  "+izdatelstvo+"  "+cipher);
+    }
+    public void Information() {
+        System.out.println("Справочник " +name+ " автора "  + autor+year+" года "+"  "+izdatelstvo+"  "+cipher);
+    }
 }
-
-
-
