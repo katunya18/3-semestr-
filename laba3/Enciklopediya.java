@@ -1,16 +1,13 @@
 public class Enciklopediya extends Book {
-    private String typeBook = "Энциклопедия";
+        private int list;
 
-    public Enciklopediya(String cipher, String autor, String name, int year, String izdatelstvo) {
-        super(cipher, autor, name, year, izdatelstvo);
+        public Enciklopediya(String cipher, String autor, String name, int year, String izdatelstvo, int list) {
+            super(cipher, autor, name, year, izdatelstvo);
+            this.list=list;
+        }
+        @Override
+        public void Show() {
+            System.out.println("Энциклопедия " + getname() + " автора "  + getautor()+ " с количнсьвом страниц  " + list);
+        }
+
     }
-    @Override
-    public String toString() {
-        return typeBook + '\n' +
-                getcipher() + '\n' +
-                getautor()+ '\n' +
-                getname()+ '\n' +
-                getyear()+ '\n' +
-                getizdatelstvo();
-    }
-}
