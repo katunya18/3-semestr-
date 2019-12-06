@@ -1,16 +1,13 @@
 public class Spravochnik extends Book {
-    private String typBook = "Справочик";
+    private String type;
 
-     public Spravochnik(String cipher, String autor, String name, int year, String izdatelstvo) {
+     public Spravochnik(String cipher, String autor, String name, int year, String izdatelstvo, String type) {
         super(cipher, autor, name, year, izdatelstvo);
+        this.type=type;
     }
-    @Override
-    public String toString() {
-        return typBook + '\n' +
-                getcipher() + '\n' +
-                getautor()+ '\n' +
-                getname()+ '\n' +
-                getyear()+ '\n' +
-                getizdatelstvo();
-    }
+        @Override
+    public void Information() {
+        System.out.println("Справочник " + type + " автора "  + getautor()+ " выпущен " + getyear());
+     }
+
 }
