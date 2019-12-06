@@ -1,13 +1,13 @@
-public class Enciklopediya extends Book {
-        private int list;
+public class Spravochnik extends Book {
+    private String type;
 
-        public Enciklopediya(String cipher, String autor, String name, int year, String izdatelstvo, int list) {
-            super(cipher, autor, name, year, izdatelstvo);
-            this.list=list;
-        }
-        @Override
-        public void Show() {
-            System.out.println("Энциклопедия " + getname() + " автора "  + getautor()+ " с количнсьвом страниц  " + list);
-        }
-
+     public Spravochnik(String cipher, String autor, String name, int year, String izdatelstvo, String type) {
+        super(cipher, autor, name, year, izdatelstvo);
+        this.type=type;
     }
+        @Override
+    public void Information() {
+        System.out.println("Справочник " + type + " автора "  + getautor()+ " выпущен " + getyear()+" "+getname()+" "+getcipher()+" "+getizdatelstvo());
+     }
+
+}
