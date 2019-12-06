@@ -7,7 +7,7 @@ public class Spravochnik extends Book {
     }
         @Override
     public void Information() {
-        System.out.println("Справочник " + type + " автора "  + getautor()+ " выпущен " + getyear());
+        System.out.println("Справочник " + type + " автора "  + getautor()+ " выпущен " + getyear()+" "+getname()+" "+getcipher()+" "+getizdatelstvo());
      }
 
 }
