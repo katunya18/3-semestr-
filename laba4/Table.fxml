@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TableController">
+   <children>
+      <SplitPane>
+         <items>
+            <TableView fx:id="table" prefHeight="400.0" prefWidth="600.0">
+              <columns>
+                <TableColumn fx:id="nomer" prefWidth="45.0" text="Номер" />
+                <TableColumn fx:id="name1" prefWidth="123.0" text="Кто звонил" />
+                  <TableColumn fx:id="name2" prefWidth="101.0" text="Кому звонили" />
+                  <TableColumn fx:id="data" prefWidth="94.0" text="Дата" />
+                  <TableColumn fx:id="vremya" prefWidth="114.0" text="Время" />
+                  <TableColumn fx:id="dlit" prefWidth="122.0" text="Длительность" />
+              </columns>
+            </TableView>
+         </items>
+      </SplitPane>
+      <Button layoutX="619.0" layoutY="354.0" mnemonicParsing="false" onAction="#delete" text="Удалить" />
+   </children>
+</AnchorPane>
